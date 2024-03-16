@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url("Fonts/MPLUSRounded1c-Bold.ttf");
+    
+    }
+    body {
+        background-image: linear-gradient(to bottom right, #C8C1AC,#FFE794);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: 'CustomFont';
+
+    }
+    form {
+        display: block;
+        margin-right:3rem;
+        margin-left: 3rem;
+        background: rgba(255, 255, 255, 0.19);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        -webkit-backdrop-filter: blur(11.6px);
+        backdrop-filter: blur(11.6px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        h2{
+            text-align: center;
+        }
+    }
+    .joinuslink{
+        text-decoration: none;
+        color: #1B1C1E;
+        text-align: center;
+    }
+    .Agri{
+    background: url('images/grass.jpg');
+    background-size: contain;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #1B1C1E;
+        border-radius: 20px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 10px;
+        margin: 1rem auto 8px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        max-width:200px;
+        width: 100%;
+        display: block;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+    .toggle-input {
+    display: none;
+    }
+  
+  .toggle-label {
+    width: 50px;
+    height: 20px;
+    position: relative;
+    display: block;
+    background: #fbfbfb;
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .toggle-label:after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 0px;
+    left: 1px;
+    background: #d8dadd;
+    border-radius: 18px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+  }
+  
+  
+  .toggle-input:checked + .toggle-label {
+    background: #ffffff;
+  }
+  
+  .toggle-input:checked + .toggle-label:after {
+    left: calc(140% - 19px);
+    transform: translateX(-100%);
+    background: #99f870;
+    
+  }
+  .modes {
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 10px;
+  }
+  .regpage, .login{
+            display: none; /* Initially hide the registration page */
+        }
+
+        .show-page {
+            display: block;
+            animation: fadeIn 0.5s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
